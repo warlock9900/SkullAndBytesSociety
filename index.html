@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<link
-		rel="stylesheet" href="./style.css"/>
+		rel="stylesheet" href="./asset/css/style.css"/>
 
 		<!-- Animate CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,10 +13,10 @@
 		<title>Skull & Bytes Society</title>
 	</head>
 	<body>
-		<nav>
+		<nav data-controller="test">
 
 			<a class="nav-logo" href="./index.html">
-				<img src="./logo0.jpg" alt="SBS"/>
+				<img src="./public/img/logo0.jpg" alt="SBS"/>
 			</a>
 
 			<div class="hamburger">
@@ -27,12 +27,15 @@
 
 			<ul class="nav-links">
 				<li>
-					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeH-4OAr-c7pVTBrHuhoyPD0T1RBV9o63HlFNs7gJD1JaK43Q/viewform" class="glitch" data-text="
-																										          Are you a gamer">Are you a gamer ?</a>
+					<div class="gamer-div">
+						<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeH-4OAr-c7pVTBrHuhoyPD0T1RBV9o63HlFNs7gJD1JaK43Q/viewform" class="glitch gamer d-none" data-text="Are you a gamer">Are you a Gamer ?</a>
+					</div>
+					<div class="joinUs-div">
+						<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeH-4OAr-c7pVTBrHuhoyPD0T1RBV9o63HlFNs7gJD1JaK43Q/viewform" class="glitch joinUs d-none" data-text="Join Us">Join Us</a>
+					</div>
 				</li>
 			</ul>
 		</nav>
-
 		<div class="content">
 			<section class="title">
 				<div>Skull</div>
@@ -43,17 +46,19 @@
 			<section class="footer">
 				<a target="_blank" href="https://discord.gg/MbhU6Qpw93">
 					<svg id="discordIcon">
-						<use xlink: href="./icons.svg#discordIcon"></use>
+						<use xlink: href="./public/icons.svg#discordIcon"></use>
 					</svg>
 				</a>
 
 				<a target="_blank" href="https://twitter.com/SkullandBytes">
 					<svg id="twitterIcon">
-						<use xlink: href="./icons.svg#twitterIcon"></use>
+						<use xlink: href="./public/icons.svg#twitterIcon"></use>
 					</svg>
 				</a>
 			</section>
 		</div>
-		<script src="./app.js"></script>
 	</body>
+
+	<script type="module" src="./asset/js/app.js"></script>
+
 </html>
